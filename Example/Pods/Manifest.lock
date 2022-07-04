@@ -1,0 +1,16 @@
+PODS:
+  - RedirectSpotlightTraffic (0.0.1)
+
+DEPENDENCIES:
+  - RedirectSpotlightTraffic (from `../RedirectSpotlightTraffic/`)
+
+EXTERNAL SOURCES:
+  RedirectSpotlightTraffic:
+    :path: "../RedirectSpotlightTraffic/"
+
+SPEC CHECKSUMS:
+  RedirectSpotlightTraffic: afdc20eca81dce60a192edbac77876bd35df0ae2
+
+PODFILE CHECKSUM: 97e9070eac06ae17e0ff5a76095bac736cf2d113
+
+COCOAPODS: 1.11.3

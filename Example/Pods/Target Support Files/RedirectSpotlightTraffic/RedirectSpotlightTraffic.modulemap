@@ -1,0 +1,6 @@
+framework module RedirectSpotlightTraffic {
+  umbrella header "RedirectSpotlightTraffic-umbrella.h"
+
+  export *
+  module * { export * }
+}
