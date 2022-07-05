@@ -76,25 +76,16 @@ public class RedirectSpotlightTrafficSingleton {
                         let deviceCountry = Locale.current.regionCode
                         
                         if deviceCountry?.uppercased() == country.uppercased() {
-                            var attributeSet: CSSearchableItemAttributeSet? = nil
-                            if #available(iOS 14.0, *) {
+                            /*if #available(iOS 14.0, *) {
                                 let item = self.createCSSearchableItemAttributeSetIOS14(spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country)
                                 searchableItems.append(item)
                             } else {
                                 // Fallback on earlier versions
                                 let item = self.createCSSearchableItemAttributeSet(spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country)
                                 searchableItems.append(item)
-                            }
-                            
-                            if let attributeSet = attributeSet {
-                                attributeSet.title = spotlightTerm
-                                attributeSet.contentDescription = searchTerm
-                                attributeSet.country = country
-                                
-                                let item = CSSearchableItem(uniqueIdentifier: searchTerm, domainIdentifier: nil, attributeSet: attributeSet)
-                                searchableItems.append(item)
-                            }
-                            
+                            }*/
+                            let item = self.createCSSearchableItemAttributeSet(spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country)
+                            searchableItems.append(item)
                         }
                     }
                 }
@@ -112,7 +103,7 @@ public class RedirectSpotlightTrafficSingleton {
         }
     }
     
-    @available(iOS 14.0, *)
+    /*@available(iOS 14.0, *)
     private func createCSSearchableItemAttributeSetIOS14(spotlightTerm: String, searchTerm: String, country: String) -> CSSearchableItem {
         let attributeSet = CSSearchableItemAttributeSet(contentType: .text)
         attributeSet.title = spotlightTerm
@@ -121,7 +112,7 @@ public class RedirectSpotlightTrafficSingleton {
         
         let item = CSSearchableItem(uniqueIdentifier: searchTerm, domainIdentifier: nil, attributeSet: attributeSet)
         return item
-    }
+    }*/
     
     private func createCSSearchableItemAttributeSet(spotlightTerm: String, searchTerm: String, country: String) -> CSSearchableItem {
         let attributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeText as String)
