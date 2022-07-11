@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/AmpMe/RedirectSpotlightTraffic"
   spec.license      = "MIT"
   spec.author       = { "Butr Inc." => "spotlightredirect@butr.com" }
-  spec.ios.deployment_target = "10.0"
+  spec.platform     = :ios, "10.0"
   spec.source       = { :git => "https://github.com/AmpMe/RedirectSpotlightTraffic.git", :tag => spec.version.to_s }
   spec.source_files  = "RedirectSpotlightTraffic/**/*.h", "RedirectSpotlightTraffic/**/*.m", "RedirectSpotlightTraffic/**/*.swift"
   spec.frameworks = "CoreSpotlight", "CoreServices", "UIKit", "UniformTypeIdentifiers"
