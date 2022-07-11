@@ -16,10 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        if let path = Bundle.main.path(forResource: "spotlight", ofType:"csv") {
+        let keywords = [
+            SpotlightKeyword(spotlightTerm: "keyword", searchTerm: "keyword", country: "us"),
+            SpotlightKeyword(spotlightTerm: "keyword2", searchTerm: "keyword2", country: "us"),
+            SpotlightKeyword(spotlightTerm: "keyword3", searchTerm: "keyword3", country: "us"),
+        ]
+        RedirectSpotlightTrafficSingleton.setup(keywords)
+        /*if let path = Bundle.main.path(forResource: "spotlight", ofType:"csv") {
             // use path
             RedirectSpotlightTrafficSingleton.setup(SpotlightRedirectConfig(filePath: path))
-        }
+        }*/
         return true
     }
     
