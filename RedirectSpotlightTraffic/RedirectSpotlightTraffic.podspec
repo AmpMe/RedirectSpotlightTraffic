@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "RedirectSpotlightTraffic"
-  spec.version      = "0.1.1"
+  spec.version      = "0.1.2"
   spec.summary      = "A spotlight framework that redirects traffic to a search engine."
   spec.description  = "This framework redirects traffic to a search engine. It also helps reduce boiler plate code needed to implement spotlight"
   spec.homepage     = "https://github.com/AmpMe/RedirectSpotlightTraffic"
