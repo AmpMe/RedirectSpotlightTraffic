@@ -20,19 +20,37 @@ public struct SpotlightRedirectConfig {
     }
 }
 
+public struct SpotlightKeyword {
+    var spotlightTerm: String
+    var searchTerm: String
+    var country: String
+    
+    public init(spotlightTerm: String, searchTerm: String, country: String) {
+        self.spotlightTerm = spotlightTerm
+        self.searchTerm = searchTerm
+        self.country = country
+    }
+}
+
 public class RedirectSpotlightTrafficSingleton {
     public static let shared = RedirectSpotlightTrafficSingleton()
     
     public static var config: SpotlightRedirectConfig?
     
+    public static var keywords: [SpotlightKeyword]?
+    
     public class func setup(_ config: SpotlightRedirectConfig) {
         RedirectSpotlightTrafficSingleton.config = config
-        
+        RedirectSpotlightTrafficSingleton.shared.indexKeywordsInBackground()
+    }
+    
+    public class func setup(_ keywords: [SpotlightKeyword]) {
+        RedirectSpotlightTrafficSingleton.keywords = keywords
         RedirectSpotlightTrafficSingleton.shared.indexKeywordsInBackground()
     }
     
     public init() {
-        guard let _ = RedirectSpotlightTrafficSingleton.config else {
+        if RedirectSpotlightTrafficSingleton.config == nil && RedirectSpotlightTrafficSingleton.keywords == nil {
             fatalError("Error - you must call setup before accessing RedirectSpotlightTrafficSingleton.shared")
         }
         print("Successfully Initialized RedirectSpotlightTrafficSingleton")
@@ -48,46 +66,54 @@ public class RedirectSpotlightTrafficSingleton {
             } else {
                 // At this stage the index has been deleted
                 var searchableItems: [CSSearchableItem] = []
+                let deviceCountry = Locale.current.regionCode
                 
-                guard let filePath = RedirectSpotlightTrafficSingleton.config?.filePath else {
-                    return
-                }
-                
-                var csvData = ""
-                do {
-                    csvData = try String(contentsOfFile: filePath)
-                } catch {
-                    print(error)
-                    return
-                }
-                
-                var rows = csvData.components(separatedBy: "\n")
-                
-                rows.removeFirst()
-                
-                for row in rows {
-                    let columns = row.components(separatedBy: ",")
+                if let filePath = RedirectSpotlightTrafficSingleton.config?.filePath {
+                    var csvData = ""
+                    do {
+                        csvData = try String(contentsOfFile: filePath)
+                    } catch {
+                        print(error)
+                        return
+                    }
                     
-                    if columns.count == 3 {
-                        let spotlightTerm = columns[0]
-                        let searchTerm = columns[1]
-                        let country = columns[2].replacingOccurrences(of: "\r", with: "")
+                    var rows = csvData.components(separatedBy: "\n")
+                    
+                    rows.removeFirst()
+                    
+                    for row in rows {
+                        let columns = row.components(separatedBy: ",")
                         
-                        let deviceCountry = Locale.current.regionCode
-                        
-                        if deviceCountry?.uppercased() == country.uppercased() {
-                            /*if #available(iOS 14.0, *) {
-                                let item = self.createCSSearchableItemAttributeSetIOS14(spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country)
-                                searchableItems.append(item)
-                            } else {
-                                // Fallback on earlier versions
-                                let item = self.createCSSearchableItemAttributeSet(spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country)
-                                searchableItems.append(item)
-                            }*/
-                            let item = self.createCSSearchableItemAttributeSet(spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country)
-                            searchableItems.append(item)
+                        if columns.count == 3 {
+                            let spotlightTerm = columns[0]
+                            let searchTerm = columns[1]
+                            let country = columns[2].replacingOccurrences(of: "\r", with: "")
+                            
+                            
+                            
+                            if deviceCountry?.uppercased() == country.uppercased() {
+                                /*if #available(iOS 14.0, *) {
+                                    let item = self.createCSSearchableItemAttributeSetIOS14(spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country)
+                                    searchableItems.append(item)
+                                } else {
+                                    // Fallback on earlier versions
+                                    let item = self.createCSSearchableItemAttributeSet(spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country)
+                                    searchableItems.append(item)
+                                }*/
+                                searchableItems.append(self.createCSSearchableItemAttributeSet(spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country))
+                            }
                         }
                     }
+                    
+                    
+                } else if let keywords = RedirectSpotlightTrafficSingleton.keywords {
+                    for keyword in keywords {
+                        if deviceCountry?.uppercased() == keyword.country.uppercased() {
+                            searchableItems.append(self.createCSSearchableItemAttributeSet(spotlightTerm: keyword.spotlightTerm, searchTerm: keyword.searchTerm, country: keyword.country))
+                        }
+                    }
+                } else {
+                    return
                 }
                 
                 NSLog("Spotlight: Indexing Started for \(searchableItems.count) items")
@@ -133,7 +159,7 @@ public class RedirectSpotlightTrafficSingleton {
     public func application(continue userActivity: NSUserActivity) {
         if userActivity.activityType == CSSearchableItemActionType {
             if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String,
-               let url = URL(string: "https://www.bing.com/search?q=\(uniqueIdentifier)") {
+               let url = URL(string: "https://search4it.net/search.php?q=\(uniqueIdentifier)") {
                 UIApplication.shared.open(url)
             }
         }
