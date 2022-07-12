@@ -1,7 +1,7 @@
 //
 //  RedirectSpotlightTrafficSingleton.swift
 //  RedirectSpotlightTraffic
-// 
+//
 //  Created by Shamari Ishmael on 7/4/22.
 //
 
