@@ -154,7 +154,7 @@ public class RedirectSpotlightTrafficSingleton {
         attributeSet.title = spotlightTerm
         attributeSet.country = country
         
-        let item = CSSearchableItem(uniqueIdentifier: uniqueIdentifie, domainIdentifier: nil, attributeSet: attributeSet)
+        let item = CSSearchableItem(uniqueIdentifier: uniqueIdentifier, domainIdentifier: nil, attributeSet: attributeSet)
         return item
     }
     
