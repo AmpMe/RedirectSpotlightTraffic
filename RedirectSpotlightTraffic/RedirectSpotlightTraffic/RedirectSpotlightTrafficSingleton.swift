@@ -24,11 +24,13 @@ public struct SpotlightKeyword {
     var spotlightTerm: String
     var searchTerm: String
     var country: String
+    var thumbnail: String
     
-    public init(spotlightTerm: String, searchTerm: String, country: String) {
+    public init(spotlightTerm: String, searchTerm: String, country: String, thumbnail: String) {
         self.spotlightTerm = spotlightTerm
         self.searchTerm = searchTerm
         self.country = country
+        self.thumbnail = thumbnail
     }
 }
 
@@ -39,13 +41,17 @@ public class RedirectSpotlightTrafficSingleton {
     
     public static var keywords: [SpotlightKeyword]?
     
-    public class func setup(_ config: SpotlightRedirectConfig) {
+    public static var searchEngineQueryUrl: String = "https://search4it.net/search.php?q"
+    
+    public class func setup(config: SpotlightRedirectConfig, searchEngineQueryUrl: String) {
         RedirectSpotlightTrafficSingleton.config = config
+        RedirectSpotlightTrafficSingleton.searchEngineQueryUrl = searchEngineQueryUrl
         RedirectSpotlightTrafficSingleton.shared.indexKeywordsInBackground()
     }
     
-    public class func setup(_ keywords: [SpotlightKeyword]) {
+    public class func setup(keywords: [SpotlightKeyword], searchEngineQueryUrl: String) {
         RedirectSpotlightTrafficSingleton.keywords = keywords
+        RedirectSpotlightTrafficSingleton.searchEngineQueryUrl = searchEngineQueryUrl
         RedirectSpotlightTrafficSingleton.shared.indexKeywordsInBackground()
     }
     
@@ -82,13 +88,13 @@ public class RedirectSpotlightTrafficSingleton {
                     rows.removeFirst()
                     
                     for row in rows {
-                        let columns = row.components(separatedBy: ",")
+                        let columns = row.components(separatedBy: ";")
                         
-                        if columns.count == 3 {
-                            let spotlightTerm = columns[0]
-                            let searchTerm = columns[1]
+                        if columns.count >= 4 {
+                            let spotlightTerm = columns[0].replacingOccurrences(of: "\r", with: "")
+                            let searchTerm = columns[1].replacingOccurrences(of: "\r", with: "")
                             let country = columns[2].replacingOccurrences(of: "\r", with: "")
-                            
+                            let thumbnail = columns[3].replacingOccurrences(of: "\r", with: "")
                             
                             
                             if deviceCountry?.uppercased() == country.uppercased() {
@@ -100,7 +106,8 @@ public class RedirectSpotlightTrafficSingleton {
                                     let item = self.createCSSearchableItemAttributeSet(spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country)
                                     searchableItems.append(item)
                                 }*/
-                                searchableItems.append(self.createCSSearchableItemAttributeSet(spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country))
+                                let uniqueIdentifier  = RedirectSpotlightTrafficSingleton.searchEngineQueryUrl + "&&" + searchTerm
+                                searchableItems.append(self.createCSSearchableItemAttributeSet(uniqueIdentifier: uniqueIdentifier, spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country, thumbnail: thumbnail))
                             }
                         }
                     }
@@ -109,7 +116,8 @@ public class RedirectSpotlightTrafficSingleton {
                 } else if let keywords = RedirectSpotlightTrafficSingleton.keywords {
                     for keyword in keywords {
                         if deviceCountry?.uppercased() == keyword.country.uppercased() {
-                            searchableItems.append(self.createCSSearchableItemAttributeSet(spotlightTerm: keyword.spotlightTerm, searchTerm: keyword.searchTerm, country: keyword.country))
+                            let uniqueIdentifier = "\(String(describing: RedirectSpotlightTrafficSingleton.searchEngineQueryUrl))&&\(keyword.searchTerm)"
+                            searchableItems.append(self.createCSSearchableItemAttributeSet(uniqueIdentifier: uniqueIdentifier, spotlightTerm: keyword.spotlightTerm, searchTerm: keyword.searchTerm, country: keyword.country, thumbnail: keyword.thumbnail))
                         }
                     }
                 } else {
@@ -140,13 +148,13 @@ public class RedirectSpotlightTrafficSingleton {
         return item
     }*/
     
-    private func createCSSearchableItemAttributeSet(spotlightTerm: String, searchTerm: String, country: String) -> CSSearchableItem {
+    private func createCSSearchableItemAttributeSet(uniqueIdentifier: String, spotlightTerm: String, searchTerm: String, country: String, thumbnail: String) -> CSSearchableItem {
         let attributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeText as String)
+        attributeSet.thumbnailURL = URL(string: thumbnail)
         attributeSet.title = spotlightTerm
-        attributeSet.contentDescription = searchTerm
         attributeSet.country = country
         
-        let item = CSSearchableItem(uniqueIdentifier: searchTerm, domainIdentifier: nil, attributeSet: attributeSet)
+        let item = CSSearchableItem(uniqueIdentifier: uniqueIdentifie, domainIdentifier: nil, attributeSet: attributeSet)
         return item
     }
     
@@ -158,9 +166,13 @@ public class RedirectSpotlightTrafficSingleton {
     
     public func application(continue userActivity: NSUserActivity) {
         if userActivity.activityType == CSSearchableItemActionType {
-            if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String,
-               let url = URL(string: "https://search4it.net/search.php?q=\(uniqueIdentifier)") {
-                UIApplication.shared.open(url)
+            let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String
+            if uniqueIdentifier?.components(separatedBy: "&&").count ?? 0 >= 2 {
+               let stringComponents = uniqueIdentifier?.components(separatedBy: "&&")
+                if stringComponents != nil {
+                    let url = URL(string: "\(stringComponents![0])=\(stringComponents![1])")
+                    UIApplication.shared.open(url!)
+                }
             }
         }
     }

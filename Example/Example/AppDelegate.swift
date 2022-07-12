@@ -16,12 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let testThumbnail = "https://yt3.ggpht.com/-xV5C7OqMbNUd0txFy2VFkV_nvA_UUMGZkwpUWmhhwZObrG2QGvepWUVQ5yRg_1ZrrC3lBSW=s88-c-k-c0x00ffffff-no-rj-mo"
         let keywords = [
-            SpotlightKeyword(spotlightTerm: "keyword", searchTerm: "keyword", country: "us"),
-            SpotlightKeyword(spotlightTerm: "keyword2", searchTerm: "keyword2", country: "us"),
-            SpotlightKeyword(spotlightTerm: "keyword3", searchTerm: "keyword3", country: "us"),
+            SpotlightKeyword(spotlightTerm: "keyword", searchTerm: "keyword", country: "us", thumbnail: testThumbnail),
+            SpotlightKeyword(spotlightTerm: "keyword2", searchTerm: "keyword2", country: "us", thumbnail: testThumbnail),
+            SpotlightKeyword(spotlightTerm: "keyword3", searchTerm: "keyword3", country: "us", thumbnail: testThumbnail),
         ]
-        RedirectSpotlightTrafficSingleton.setup(keywords)
+        RedirectSpotlightTrafficSingleton.setup(keywords: keywords, searchEngineQueryUrl: "https://search4it.net/search.php?q")
         /*if let path = Bundle.main.path(forResource: "spotlight", ofType:"csv") {
             // use path
             RedirectSpotlightTrafficSingleton.setup(SpotlightRedirectConfig(filePath: path))
