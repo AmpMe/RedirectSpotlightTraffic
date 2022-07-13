@@ -168,7 +168,7 @@ public class RedirectSpotlightTrafficSingleton {
         }
     }
     
-    public func application(continue userActivity: NSUserActivity) {
+    public static func application(continue userActivity: NSUserActivity) {
         if userActivity.activityType == CSSearchableItemActionType {
             let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String
             if uniqueIdentifier?.components(separatedBy: "&&").count ?? 0 >= 8 {

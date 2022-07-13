@@ -8,46 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		05AA8142D3755A90A1A687B55FBFB4E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0493EC8FB24917B44A94C1E0B6B86C4C /* Foundation.framework */; };
-		197ACD43D0F5BC16E9412C879088B346 /* RedirectSpotlightTraffic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E92AC014D3C59DF5416AB0F2162DBD1 /* RedirectSpotlightTraffic-dummy.m */; };
+		197ACD43D0F5BC16E9412C879088B346 /* RedirectSpotlightTraffic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B21816186585DB1FE90CEA2069BDB207 /* RedirectSpotlightTraffic-dummy.m */; };
 		2358ECACBD675FFBFDBA36A56A0F7CCA /* Pods-ExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4DE105D59EBDFD32F7430EDE0B2410 /* Pods-ExampleTests-dummy.m */; };
 		2C432DC5F87648147553833AA66B924B /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FA908DB2922FA92C8DC7F7765CA557 /* CoreSpotlight.framework */; };
 		332DDB489DAC0724F3F7415444147D26 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FBC06CAAEF08C2C01DD809446573E3 /* Pods-Example-dummy.m */; };
 		4A0E4E446BEDFF8D0A790B77EC15FEA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0493EC8FB24917B44A94C1E0B6B86C4C /* Foundation.framework */; };
 		4A3E7F249978876C8653C9487416592D /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44284B6CECCD1A5D7886DC6B27D938B5 /* CoreServices.framework */; };
 		503AAD7956ABCBCFA66366DC8FF8413E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0493EC8FB24917B44A94C1E0B6B86C4C /* Foundation.framework */; };
-		560D1531F4770E8BDF8789D12A953B5B /* RedirectSpotlightTrafficSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C1A52F732258F3DA801F93FCA66F9B /* RedirectSpotlightTrafficSingleton.swift */; };
-		5B195CB9C4C8B7D6BF8F132F2CF30381 /* RedirectSpotlightTraffic.h in Headers */ = {isa = PBXBuildFile; fileRef = 837CFA1F4283AC75E6B8282DBC190B4F /* RedirectSpotlightTraffic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		560D1531F4770E8BDF8789D12A953B5B /* RedirectSpotlightTrafficSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B3DCD4FA715FAA8FCED077D79D83E /* RedirectSpotlightTrafficSingleton.swift */; };
+		5B195CB9C4C8B7D6BF8F132F2CF30381 /* RedirectSpotlightTraffic.h in Headers */ = {isa = PBXBuildFile; fileRef = 3695A6A068C3F9FB4C186D0101A08229 /* RedirectSpotlightTraffic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6163D68393C8D55D0A107C90EDCE51F9 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D5CD16051A6E8F77ACC2B5EC182F497 /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A8288EF2B1D79C4B7548AE82E7542B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0493EC8FB24917B44A94C1E0B6B86C4C /* Foundation.framework */; };
 		9D06D77CFA67707E170BE2DCEAF063F0 /* Pods-Example-ExampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF54E9A251968F8BF102DA9BFC40597 /* Pods-Example-ExampleUITests-dummy.m */; };
 		C2D6C53C1C8E5FCF82580540F06007E1 /* Pods-Example-ExampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2008F8A1CC62875424F7404BAF8D613C /* Pods-Example-ExampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2F7B05729193ABF3D3185603B6DC3BD /* Pods-ExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81DBB735FB54499DF2C61DDED5F821C8 /* Pods-ExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA72EE4D4D2D84691EC0E6B3F449CA85 /* RedirectSpotlightTraffic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E307BFDD27063578FA46425CF1BD7CC6 /* RedirectSpotlightTraffic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA72EE4D4D2D84691EC0E6B3F449CA85 /* RedirectSpotlightTraffic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C07FCDA47A5C4E62AC07660602D87FFE /* RedirectSpotlightTraffic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCEE6D7F7BA409518CF3E53D58683D3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189244F2D2D34FEFA72E62CC2D6121C7 /* UIKit.framework */; };
 		EB51FE8733AACCCD911A8DFC85BF5742 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7980115E09D2CA23AB20075FADB51DD7 /* UniformTypeIdentifiers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		82F40188B7CB8FA9AB42627D06646192 /* PBXContainerItemProxy */ = {
+		3352A4381AA6ECC54BC91154680F615F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1B08DDA1393FE6711F6C651B164F367;
+			remoteInfo = RedirectSpotlightTraffic;
+		};
+		CECA043B3675BB76BAEDDA2B63575391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1B08DDA1393FE6711F6C651B164F367;
+			remoteInfo = RedirectSpotlightTraffic;
+		};
+		F60810B669FD90877D07EA04BF651332 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0AEE99A309977BD12A049FF48AF9BA4B;
 			remoteInfo = "Pods-Example";
-		};
-		DD22B41B5DD9426C23584E0A061BEF45 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1B08DDA1393FE6711F6C651B164F367;
-			remoteInfo = RedirectSpotlightTraffic;
-		};
-		ECC2E493EF4B1F821069F99D24B48ABF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1B08DDA1393FE6711F6C651B164F367;
-			remoteInfo = RedirectSpotlightTraffic;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,45 +58,47 @@
 		168E30A406BEF02CC78C267AA5469BCF /* Pods-Example-ExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example-ExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		189244F2D2D34FEFA72E62CC2D6121C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1F667CC0E19EAF34E5A4119E2121F585 /* Pods-Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Example"; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FA54EEC1EFB1911B2C0EEE93AE3EF15 /* RedirectSpotlightTraffic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RedirectSpotlightTraffic.debug.xcconfig; sourceTree = "<group>"; };
 		2008F8A1CC62875424F7404BAF8D613C /* Pods-Example-ExampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-ExampleUITests-umbrella.h"; sourceTree = "<group>"; };
 		22BCA2BE4DC2A2561F9A4E949116977E /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3184741B2FE96DF2C5D5915691ECD794 /* RedirectSpotlightTraffic */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RedirectSpotlightTraffic; path = RedirectSpotlightTraffic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3695A6A068C3F9FB4C186D0101A08229 /* RedirectSpotlightTraffic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RedirectSpotlightTraffic.h; path = RedirectSpotlightTraffic/RedirectSpotlightTraffic.h; sourceTree = "<group>"; };
 		37767CDB6517932834F2615A3E40766A /* Pods-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-Info.plist"; sourceTree = "<group>"; };
+		38FD1621DFCEE847072C49B26A6B8927 /* RedirectSpotlightTraffic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RedirectSpotlightTraffic.debug.xcconfig; sourceTree = "<group>"; };
 		39ECFFAEE4D2F9A34763392A4E42B689 /* Pods-Example-ExampleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-ExampleUITests-Info.plist"; sourceTree = "<group>"; };
+		3E7DB254901B62E6A33D7E32E563E9BC /* RedirectSpotlightTraffic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RedirectSpotlightTraffic-Info.plist"; sourceTree = "<group>"; };
 		44284B6CECCD1A5D7886DC6B27D938B5 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		45EC3EBD726450A5C96C1F66814ABC47 /* RedirectSpotlightTraffic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RedirectSpotlightTraffic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4A9DFFAED89609D1BBEB26F6B9E67146 /* Pods-ExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		630CABE8F692FCDBFD1B122A2D0CE388 /* Pods-ExampleTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ExampleTests"; path = Pods_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65054D976DC0CD626FCA2E2CEC8E1A25 /* Pods-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B5CBCD908C73EFCED61BD98460F05EF /* Pods-Example-ExampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-ExampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		743E3804AA35BBE63AC6D1980949668B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		775096B00818E073B5605F8CE79A0BD2 /* RedirectSpotlightTraffic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RedirectSpotlightTraffic-prefix.pch"; sourceTree = "<group>"; };
 		7980115E09D2CA23AB20075FADB51DD7 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = DEVELOPER_DIR; };
+		7A323BA77D924732C187CF9574928B7B /* RedirectSpotlightTraffic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RedirectSpotlightTraffic.release.xcconfig; sourceTree = "<group>"; };
 		81DBB735FB54499DF2C61DDED5F821C8 /* Pods-ExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExampleTests-umbrella.h"; sourceTree = "<group>"; };
-		837CFA1F4283AC75E6B8282DBC190B4F /* RedirectSpotlightTraffic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RedirectSpotlightTraffic.h; path = RedirectSpotlightTraffic/RedirectSpotlightTraffic.h; sourceTree = "<group>"; };
+		894B3DCD4FA715FAA8FCED077D79D83E /* RedirectSpotlightTrafficSingleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectSpotlightTrafficSingleton.swift; path = RedirectSpotlightTraffic/RedirectSpotlightTrafficSingleton.swift; sourceTree = "<group>"; };
 		8AAFFFF03FE7D0FCEA61724821452BED /* Pods-ExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleTests-Info.plist"; sourceTree = "<group>"; };
 		8DF54E9A251968F8BF102DA9BFC40597 /* Pods-Example-ExampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-ExampleUITests-dummy.m"; sourceTree = "<group>"; };
-		8E92AC014D3C59DF5416AB0F2162DBD1 /* RedirectSpotlightTraffic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RedirectSpotlightTraffic-dummy.m"; sourceTree = "<group>"; };
 		8F44706E4B57CF36D06A180BB27F867C /* Pods-ExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ExampleTests.modulemap"; sourceTree = "<group>"; };
-		908B07640445AC63FF3C464101C8A878 /* RedirectSpotlightTraffic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RedirectSpotlightTraffic.release.xcconfig; sourceTree = "<group>"; };
-		94C1A52F732258F3DA801F93FCA66F9B /* RedirectSpotlightTrafficSingleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectSpotlightTrafficSingleton.swift; path = RedirectSpotlightTraffic/RedirectSpotlightTrafficSingleton.swift; sourceTree = "<group>"; };
 		9D5CD16051A6E8F77ACC2B5EC182F497 /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A284734AF5EDE05F1FD9C2AD3085D026 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B21816186585DB1FE90CEA2069BDB207 /* RedirectSpotlightTraffic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RedirectSpotlightTraffic-dummy.m"; sourceTree = "<group>"; };
 		B4A31CBB45DDDEBA8FA40982BEC6791E /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C07FCDA47A5C4E62AC07660602D87FFE /* RedirectSpotlightTraffic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RedirectSpotlightTraffic-umbrella.h"; sourceTree = "<group>"; };
 		C54078A65F1E57154BA0DF9535462C54 /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		CA86459B834B286D472EF909A2AAD76D /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D01F4C7BCBE74F68C0C06788351AB25D /* Pods-Example-ExampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-ExampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D0C2C30C622762D8C6870F740EB57F61 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		D4FE8F3E50AE4C4BB91C118C55D7CAFB /* Pods-ExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D70A2C5DFF9D7F453984C9698CEA8557 /* RedirectSpotlightTraffic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RedirectSpotlightTraffic-prefix.pch"; sourceTree = "<group>"; };
-		DE0EB32655BEB0FA470A3CA96220C90E /* RedirectSpotlightTraffic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RedirectSpotlightTraffic-Info.plist"; sourceTree = "<group>"; };
-		E307BFDD27063578FA46425CF1BD7CC6 /* RedirectSpotlightTraffic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RedirectSpotlightTraffic-umbrella.h"; sourceTree = "<group>"; };
 		E5A8990B6200C07FBCB436D4F7700B41 /* Pods-Example-ExampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-ExampleUITests-frameworks.sh"; sourceTree = "<group>"; };
 		E8E5A2DDEE01CA7716145CA1B033B7A3 /* Pods-Example-ExampleUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Example-ExampleUITests"; path = Pods_Example_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4DE105D59EBDFD32F7430EDE0B2410 /* Pods-ExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExampleTests-dummy.m"; sourceTree = "<group>"; };
 		EDF1B691258C4A37532DD7BC9E5588F0 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
+		F1AAAEEC38AD383D98C8A1D1B2B17BE7 /* RedirectSpotlightTraffic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RedirectSpotlightTraffic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F81F59660E3FA5FF3F70BE6E43B2EA29 /* RedirectSpotlightTraffic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RedirectSpotlightTraffic.modulemap; sourceTree = "<group>"; };
 		F8FBC06CAAEF08C2C01DD809446573E3 /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
 		F9FA908DB2922FA92C8DC7F7765CA557 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreSpotlight.framework; sourceTree = DEVELOPER_DIR; };
-		FCD12E3E111C0C57112A0928B3079DED /* RedirectSpotlightTraffic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RedirectSpotlightTraffic.modulemap; sourceTree = "<group>"; };
 		FE701A3C3F479432B9ACCD94B36B4F83 /* Pods-Example-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,16 +142,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27B71936F66D30FE91F341EC6DEFD350 /* RedirectSpotlightTraffic */ = {
+		1985DDBFEA13275E9CA3393119D8FE01 /* RedirectSpotlightTraffic */ = {
 			isa = PBXGroup;
 			children = (
-				837CFA1F4283AC75E6B8282DBC190B4F /* RedirectSpotlightTraffic.h */,
-				94C1A52F732258F3DA801F93FCA66F9B /* RedirectSpotlightTrafficSingleton.swift */,
-				869C1A19A22B388F5476EEB613AC749F /* Pod */,
-				7AB4D0BC68380B4B2B8FBCE955234D05 /* Support Files */,
+				3695A6A068C3F9FB4C186D0101A08229 /* RedirectSpotlightTraffic.h */,
+				894B3DCD4FA715FAA8FCED077D79D83E /* RedirectSpotlightTrafficSingleton.swift */,
+				77004EEB5CBA997A4B1F8BA28304F5AA /* Pod */,
+				1A77ABB991222B69AF310155D21CFDA5 /* Support Files */,
 			);
 			name = RedirectSpotlightTraffic;
-			path = ../../RedirectSpotlightTraffic;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1A77ABB991222B69AF310155D21CFDA5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F81F59660E3FA5FF3F70BE6E43B2EA29 /* RedirectSpotlightTraffic.modulemap */,
+				B21816186585DB1FE90CEA2069BDB207 /* RedirectSpotlightTraffic-dummy.m */,
+				3E7DB254901B62E6A33D7E32E563E9BC /* RedirectSpotlightTraffic-Info.plist */,
+				775096B00818E073B5605F8CE79A0BD2 /* RedirectSpotlightTraffic-prefix.pch */,
+				C07FCDA47A5C4E62AC07660602D87FFE /* RedirectSpotlightTraffic-umbrella.h */,
+				38FD1621DFCEE847072C49B26A6B8927 /* RedirectSpotlightTraffic.debug.xcconfig */,
+				7A323BA77D924732C187CF9574928B7B /* RedirectSpotlightTraffic.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RedirectSpotlightTraffic";
 			sourceTree = "<group>";
 		};
 		37E8A2E8A3400ADC0901103DCD66DA8F /* Pods-Example-ExampleUITests */ = {
@@ -197,6 +214,14 @@
 			path = "Target Support Files/Pods-ExampleTests";
 			sourceTree = "<group>";
 		};
+		6BA6AD333D1F2B06926F28AC8C0E7F35 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1985DDBFEA13275E9CA3393119D8FE01 /* RedirectSpotlightTraffic */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		744EE5B2C2BCD8717193D237DC620516 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,19 +232,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7AB4D0BC68380B4B2B8FBCE955234D05 /* Support Files */ = {
+		77004EEB5CBA997A4B1F8BA28304F5AA /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				FCD12E3E111C0C57112A0928B3079DED /* RedirectSpotlightTraffic.modulemap */,
-				8E92AC014D3C59DF5416AB0F2162DBD1 /* RedirectSpotlightTraffic-dummy.m */,
-				DE0EB32655BEB0FA470A3CA96220C90E /* RedirectSpotlightTraffic-Info.plist */,
-				D70A2C5DFF9D7F453984C9698CEA8557 /* RedirectSpotlightTraffic-prefix.pch */,
-				E307BFDD27063578FA46425CF1BD7CC6 /* RedirectSpotlightTraffic-umbrella.h */,
-				1FA54EEC1EFB1911B2C0EEE93AE3EF15 /* RedirectSpotlightTraffic.debug.xcconfig */,
-				908B07640445AC63FF3C464101C8A878 /* RedirectSpotlightTraffic.release.xcconfig */,
+				743E3804AA35BBE63AC6D1980949668B /* LICENSE */,
+				A284734AF5EDE05F1FD9C2AD3085D026 /* README.md */,
+				F1AAAEEC38AD383D98C8A1D1B2B17BE7 /* RedirectSpotlightTraffic.podspec */,
 			);
-			name = "Support Files";
-			path = "../Example/Pods/Target Support Files/RedirectSpotlightTraffic";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		7FB3F527B61E9EBFD2A2B0244EC9B121 /* Products */ = {
@@ -231,14 +251,6 @@
 				3184741B2FE96DF2C5D5915691ECD794 /* RedirectSpotlightTraffic */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		869C1A19A22B388F5476EEB613AC749F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				45EC3EBD726450A5C96C1F66814ABC47 /* RedirectSpotlightTraffic.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
@@ -253,19 +265,11 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				DEFBB8403EDB833163E6D562457AC61A /* Development Pods */,
+				6BA6AD333D1F2B06926F28AC8C0E7F35 /* Development Pods */,
 				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
 				7FB3F527B61E9EBFD2A2B0244EC9B121 /* Products */,
 				744EE5B2C2BCD8717193D237DC620516 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		DEFBB8403EDB833163E6D562457AC61A /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				27B71936F66D30FE91F341EC6DEFD350 /* RedirectSpotlightTraffic */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		EBE7EEC219B31D2547DFFD6C6A2E9D63 /* Pods-Example */ = {
@@ -336,7 +340,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0B9BD6B74C223BACAB8D1A5E1E9E5B94 /* PBXTargetDependency */,
+				244F293D49E8F2FAF0F912CAD9AA7B14 /* PBXTargetDependency */,
 			);
 			name = "Pods-Example";
 			productName = Pods_Example;
@@ -355,7 +359,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				62CF74ED7C10B91C543F01AF62C90E0A /* PBXTargetDependency */,
+				7499B93070EBEAB14092E5833DBC973B /* PBXTargetDependency */,
 			);
 			name = "Pods-ExampleTests";
 			productName = Pods_ExampleTests;
@@ -392,7 +396,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7C4F262F0328BE852D9FED24EDAE3424 /* PBXTargetDependency */,
+				008D8F8F8749681D86ECB8E29EC3F409 /* PBXTargetDependency */,
 			);
 			name = "Pods-Example-ExampleUITests";
 			productName = Pods_Example_ExampleUITests;
@@ -497,23 +501,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0B9BD6B74C223BACAB8D1A5E1E9E5B94 /* PBXTargetDependency */ = {
+		008D8F8F8749681D86ECB8E29EC3F409 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RedirectSpotlightTraffic;
 			target = B1B08DDA1393FE6711F6C651B164F367 /* RedirectSpotlightTraffic */;
-			targetProxy = DD22B41B5DD9426C23584E0A061BEF45 /* PBXContainerItemProxy */;
+			targetProxy = 3352A4381AA6ECC54BC91154680F615F /* PBXContainerItemProxy */;
 		};
-		62CF74ED7C10B91C543F01AF62C90E0A /* PBXTargetDependency */ = {
+		244F293D49E8F2FAF0F912CAD9AA7B14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RedirectSpotlightTraffic;
+			target = B1B08DDA1393FE6711F6C651B164F367 /* RedirectSpotlightTraffic */;
+			targetProxy = CECA043B3675BB76BAEDDA2B63575391 /* PBXContainerItemProxy */;
+		};
+		7499B93070EBEAB14092E5833DBC973B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Example";
 			target = 0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */;
-			targetProxy = 82F40188B7CB8FA9AB42627D06646192 /* PBXContainerItemProxy */;
-		};
-		7C4F262F0328BE852D9FED24EDAE3424 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RedirectSpotlightTraffic;
-			target = B1B08DDA1393FE6711F6C651B164F367 /* RedirectSpotlightTraffic */;
-			targetProxy = ECC2E493EF4B1F821069F99D24B48ABF /* PBXContainerItemProxy */;
+			targetProxy = F60810B669FD90877D07EA04BF651332 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -630,6 +634,77 @@
 			};
 			name = Debug;
 		};
+		31E6B64342B2345E3BB6E7CF0667C93F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38FD1621DFCEE847072C49B26A6B8927 /* RedirectSpotlightTraffic.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RedirectSpotlightTraffic/RedirectSpotlightTraffic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RedirectSpotlightTraffic/RedirectSpotlightTraffic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RedirectSpotlightTraffic/RedirectSpotlightTraffic.modulemap";
+				PRODUCT_MODULE_NAME = RedirectSpotlightTraffic;
+				PRODUCT_NAME = RedirectSpotlightTraffic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CF361D4B4A9DF9A7AD4524EE5F4759E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A323BA77D924732C187CF9574928B7B /* RedirectSpotlightTraffic.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RedirectSpotlightTraffic/RedirectSpotlightTraffic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RedirectSpotlightTraffic/RedirectSpotlightTraffic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RedirectSpotlightTraffic/RedirectSpotlightTraffic.modulemap";
+				PRODUCT_MODULE_NAME = RedirectSpotlightTraffic;
+				PRODUCT_NAME = RedirectSpotlightTraffic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -733,77 +808,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		8B3486B2CAD5E5BB6DC70FF4BF291A85 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 908B07640445AC63FF3C464101C8A878 /* RedirectSpotlightTraffic.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RedirectSpotlightTraffic/RedirectSpotlightTraffic-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RedirectSpotlightTraffic/RedirectSpotlightTraffic-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RedirectSpotlightTraffic/RedirectSpotlightTraffic.modulemap";
-				PRODUCT_MODULE_NAME = RedirectSpotlightTraffic;
-				PRODUCT_NAME = RedirectSpotlightTraffic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8BCBE0F85DBD1452CCFB0239DB3E1E53 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FA54EEC1EFB1911B2C0EEE93AE3EF15 /* RedirectSpotlightTraffic.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RedirectSpotlightTraffic/RedirectSpotlightTraffic-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RedirectSpotlightTraffic/RedirectSpotlightTraffic-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RedirectSpotlightTraffic/RedirectSpotlightTraffic.modulemap";
-				PRODUCT_MODULE_NAME = RedirectSpotlightTraffic;
-				PRODUCT_NAME = RedirectSpotlightTraffic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -975,8 +979,8 @@
 		90AAC931F0592EBB8F8101F40C91F0BD /* Build configuration list for PBXNativeTarget "RedirectSpotlightTraffic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BCBE0F85DBD1452CCFB0239DB3E1E53 /* Debug */,
-				8B3486B2CAD5E5BB6DC70FF4BF291A85 /* Release */,
+				31E6B64342B2345E3BB6E7CF0667C93F /* Debug */,
+				3CF361D4B4A9DF9A7AD4524EE5F4759E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

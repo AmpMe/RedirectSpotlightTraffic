@@ -1,16 +1,16 @@
 PODS:
-  - RedirectSpotlightTraffic (0.0.1)
+  - RedirectSpotlightTraffic (0.1.7)
 
 DEPENDENCIES:
-  - RedirectSpotlightTraffic (from `../RedirectSpotlightTraffic/`)
+  - RedirectSpotlightTraffic (from `../`)
 
 EXTERNAL SOURCES:
   RedirectSpotlightTraffic:
-    :path: "../RedirectSpotlightTraffic/"
+    :path: "../"
 
 SPEC CHECKSUMS:
-  RedirectSpotlightTraffic: afdc20eca81dce60a192edbac77876bd35df0ae2
+  RedirectSpotlightTraffic: 3d135a9990951461e61768d81e3ada76937dcc9c
 
-PODFILE CHECKSUM: 97e9070eac06ae17e0ff5a76095bac736cf2d113
+PODFILE CHECKSUM: 0109dd559d312ce2aec6f2887ccfb2802e096ca6
 
 COCOAPODS: 1.11.3

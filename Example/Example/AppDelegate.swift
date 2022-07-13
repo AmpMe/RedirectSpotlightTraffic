@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         print("From AppDelegate")
-        RedirectSpotlightTrafficSingleton.shared.application(continue: userActivity)
+        RedirectSpotlightTrafficSingleton.application(continue: userActivity)
         return false
     }
 

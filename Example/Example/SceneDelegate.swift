@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
         print("From SceneDelegate")
-        RedirectSpotlightTrafficSingleton.shared.application(continue: userActivity)
+        RedirectSpotlightTrafficSingleton.application(continue: userActivity)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
