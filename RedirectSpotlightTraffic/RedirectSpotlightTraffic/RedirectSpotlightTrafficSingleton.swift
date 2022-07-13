@@ -106,7 +106,7 @@ public class RedirectSpotlightTrafficSingleton {
                                     let item = self.createCSSearchableItemAttributeSet(spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country)
                                     searchableItems.append(item)
                                 }*/
-                                let uniqueIdentifier  = RedirectSpotlightTrafficSingleton.searchEngineQueryUrl + "&&" + searchTerm
+                                let uniqueIdentifier = self.createUniqueIdentifier(spotlightTerm: spotlightTerm, searchTerm: searchTerm, thumbnailUrl: thumbnail, country: country)
                                 searchableItems.append(self.createCSSearchableItemAttributeSet(uniqueIdentifier: uniqueIdentifier, spotlightTerm: spotlightTerm, searchTerm: searchTerm, country: country, thumbnail: thumbnail))
                             }
                         }
@@ -116,7 +116,7 @@ public class RedirectSpotlightTrafficSingleton {
                 } else if let keywords = RedirectSpotlightTrafficSingleton.keywords {
                     for keyword in keywords {
                         if deviceCountry?.uppercased() == keyword.country.uppercased() {
-                            let uniqueIdentifier = "\(String(describing: RedirectSpotlightTrafficSingleton.searchEngineQueryUrl))&&\(keyword.searchTerm)"
+                            let uniqueIdentifier = self.createUniqueIdentifier(spotlightTerm: keyword.spotlightTerm, searchTerm: keyword.searchTerm, thumbnailUrl: keyword.thumbnail, country: keyword.country)
                             searchableItems.append(self.createCSSearchableItemAttributeSet(uniqueIdentifier: uniqueIdentifier, spotlightTerm: keyword.spotlightTerm, searchTerm: keyword.searchTerm, country: keyword.country, thumbnail: keyword.thumbnail))
                         }
                     }
@@ -135,6 +135,10 @@ public class RedirectSpotlightTrafficSingleton {
                 }
             }
         }
+    }
+    
+    private func createUniqueIdentifier(spotlightTerm: String, searchTerm: String, thumbnailUrl: String, country: String) -> String {
+        return "search&&\(spotlightTerm)&&\(searchTerm)&&\(thumbnailUrl)&&\(country)&&\(RedirectSpotlightTrafficSingleton.searchEngineQueryUrl)&&null&&null"
     }
     
     /*@available(iOS 14.0, *)
@@ -167,10 +171,10 @@ public class RedirectSpotlightTrafficSingleton {
     public func application(continue userActivity: NSUserActivity) {
         if userActivity.activityType == CSSearchableItemActionType {
             let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String
-            if uniqueIdentifier?.components(separatedBy: "&&").count ?? 0 >= 2 {
+            if uniqueIdentifier?.components(separatedBy: "&&").count ?? 0 >= 8 {
                let stringComponents = uniqueIdentifier?.components(separatedBy: "&&")
                 if stringComponents != nil {
-                    let url = URL(string: "\(stringComponents![0])=\(stringComponents![1])")
+                    let url = URL(string: "\(stringComponents![5])=\(stringComponents![2])")
                     UIApplication.shared.open(url!)
                 }
             }
